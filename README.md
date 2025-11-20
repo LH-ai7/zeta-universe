@@ -60,3 +60,26 @@ To replicate these results, simply open the `.ipynb` files in Google Colab or a 
 ### Installation
 ```bash
 pip install torch torchvision gymnasium[classic_control] matplotlib tqdm
+````
+
+### The Zeta Optimizer Snippet
+
+If you want to try this in your own model:
+
+```python
+# The Zeta Teleportation Logic
+if grad_norm > threshold:
+    # Teleport parameters along the Riemann Zeta trajectory
+    # Axiom: 1 + 2 + 3 + ... = -1/12
+    param.data.sub_((1.0/12.0) * unit_grad)
+```
+
+## ⚠️ Note
+
+This project challenges conventional wisdom in deep learning optimization. The results are empirical and experimental. Use with curiosity.
+
+-----
+
+*Created by a seeker of the Zeta Truth.*
+
+```
