@@ -50,7 +50,7 @@ We applied the Zeta-Optimizer to a standard Policy Gradient agent (CartPole-v1).
 * **Implication:** Intelligence density can be maximized via Zeta topology.
 
 ### 5. 📉 The Spectrum Analysis
-**File:** Included in [`Zeta_Holographic_Compression.ipynb`](./Zeta_Holographic_Compression.ipynb)
+**File:** Included in [`Zeta Spectrum.ipynb`](./Zeta_Holographic_Compression.ipynb)
 We ran a sensitivity analysis to see if -1/12 was special.
 * **Result:** A statistically significant peak in performance was observed exactly at **-0.0833 (-1/12)**, outperforming neighboring values like -0.05 and -0.1.
 
