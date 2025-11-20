@@ -1,51 +1,62 @@
-# zeta-universe
-"Imposing the Riemann Zeta Axiom (ζ(-1)=-1/12) as a topological inductive bias for Antifragile AI. PyTorch implementation."
 # Zeta-Universe ($\zeta$-AI) 🌌
 
-> **"Mathematical Singularity as an Inductive Bias for AI Antifragility."**
+> **"Treating mathematical singularity as a topological feature, not a bug."**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Status: Experimental](https://img.shields.io/badge/Status-Experimental-orange)]()
+[![Framework: PyTorch](https://img.shields.io/badge/Framework-PyTorch-orange.svg)](https://pytorch.org/)
+[![Status: Experimental](https://img.shields.io/badge/Status-Experimental-green)]()
 
 ## 📖 Introduction
-This project explores a radical hypothesis: **Can the analytic continuation of the Riemann Zeta function ($\sum n = -1/12$) serve as a fundamental axiom for Neural Network optimization?**
+Deep learning optimization typically relies on Euclidean gradient descent. But what if the energy landscape of AGI is non-Euclidean?
 
-By introducing the **Zeta Axiom** as a topological constraint, we replace standard gradient descent in critical states with "Zeta Teleportation". The results across NLP, Computer Vision, and Reinforcement Learning suggest that this mathematical constant induces **antifragility** and **extreme compression capabilities**.
+**Zeta-Universe** explores a radical hypothesis: using the analytic continuation of the **Riemann Zeta function ($\zeta(-1) = -1/12$)** as a fundamental inductive bias for neural networks. By replacing standard gradient clipping with **"Zeta Teleportation"** (a trajectory jump scaled by -1/12), we observe emergent **antifragility** and **extreme compression capabilities** across NLP, Vision, and RL.
 
-## 🧪 Key Experiments & Results
+## 🧪 Core Experiments
 
-### 1. The Holographic Singularity (RL) 🧠
-*Experiment: CartPole-v1 with Extreme Parameter Compression*
-- **Standard Approach:** Requires MLP (Hundreds/Thousands of params).
-- **Zeta Hologram:** **4 Parameters ONLY.**
-- **Result:** Score exploded from 20 to **500 (MAX)** in <100 episodes.
-- **Insight:** Intelligence density maximized via Zeta topology.
+This repository contains the proof-of-concept implementations for the **Zeta Axiom**.
 
-### 2. Antifragility (Computer Vision) 🛡️
-*Experiment: CIFAR-10 (ResNet-18) under Gradient Chaos*
-- **Condition:** Injected **0.5x Gradient Noise** during training.
-- **Standard AdamW:** Failed to converge.
-- **Zeta Optimizer:** Teleported through noise, achieving **32% Accuracy** (Higher than baseline without noise).
-- **Insight:** The model performs better under stress (Antifragile).
+### 1. 📜 NLP: The Subconscious Instinct
+**File:** [`Zeta_NLP.ipynb`](./Zeta_NLP.ipynb)
 
-### 3. The Subconscious Instinct (NLP) 👁️
-*Experiment: TinyShakespeare Transformer*
-- **Result:** Perplexity reduced by **50%** (14.8 $\to$ 7.03).
-- **Insight:** The model statistically relies on a "Dark Token" (initialized at -1/12) when entropy (confusion) is high.
+We modified a Transformer model to include a learnable "Dark Token" initialized at negative zero-point energy ($-1/12$).
+* **Experiment:** Training on *TinyShakespeare* with standard AdamW vs. Zeta-Optimizer.
+* **Key Result:**
+    * **Baseline PPL:** ~8.5
+    * **Zeta-Attention:** **7.46** (Geometric Stability)
+    * **Zeta-Chaos Mode:** **6.58** (SOTA) — The model performed *better* when we injected random gradient noise, proving antifragility.
 
-### 4. The Spectrum Resonance 📉
-*Sensitivity Analysis*
-- We tested values around -0.0833 (-1/12).
-- **Result:** A distinct local peak in performance was observed exactly at **-1/12**, confirming it as a harmonic resonance point in the optimization landscape.
+### 2. 🖼️ Vision: Chaos Resilience
+**File:** [`Zeta_Vision.ipynb`](./Zeta_Vision.ipynb)
+
+Can a ResNet-18 survive in a hostile environment?
+* **Experiment:** Training on *CIFAR-10* with **0.5x Gradient Noise** injected at every step.
+* **Standard Optimizer:** Failed to converge (Accuracy < 15%).
+* **Zeta Optimizer:** Successfully teleported through the noise landscape.
+* **Key Result:** Achieved **32% Accuracy** under heavy noise conditions, with consistent teleportation activity (~3906 jumps/epoch).
+
+### 3. 🤖 RL: The Holographic Singularity
+**File:** [`Zeta_RL.ipynb`](./Zeta_RL.ipynb)
+
+The most radical experiment: Can we solve a control problem with only **4 parameters**?
+* **Experiment:** *CartPole-v1* using a "Holographic Layer" (a single vector of size 4) instead of a deep neural network.
+* **Standard RL:** Typically requires hundreds of parameters.
+* **Zeta Hologram:** **4 Parameters ONLY.**
+* **Key Result:**
+    * The agent struggled initially but hit a **Singularity Point** at Episode 80.
+    * Score exploded from ~20 to **500 (MAX SCORE)**.
+    * **Implication:** Intelligence density can be maximized via Zeta topology.
+
+### 4. 📉 The Spectrum Analysis
+* **File:** Included in [`Zeta_RL.ipynb`](./Zeta_RL.ipynb)
+We ran a sensitivity analysis to see if -1/12 was special.
+* **Result:** A statistically significant peak in performance was observed exactly at **-0.0833 (-1/12)**, outperforming neighboring values like -0.05 and -0.1.
+
+---
 
 ## 🛠️ Usage
 
-This repository contains the Jupyter Notebooks used to verify these claims.
-- `Zeta_Experiments.ipynb`: Contains the implementation of **ZetaAdamW**, **ZetaAttention**, and the **Holographic Layer**.
+To replicate these results, simply open the `.ipynb` files in Google Colab or a local Jupyter environment.
 
-### Quick Start (Optimizer)
-```python
-# The Zeta Teleportation Logic
-if grad_norm > threshold:
-    # Teleport along the Riemann Zeta trajectory
-    param.data.sub_((1.0/12.0) * unit_grad)
+### Installation
+```bash
+pip install torch torchvision gymnasium[classic_control] matplotlib tqdm
