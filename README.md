@@ -20,7 +20,7 @@ We modified a Transformer model to include a learnable "Dark Token" initialized 
 * **Experiment:** Training on *TinyShakespeare* with standard AdamW vs. Zeta-Optimizer.
 * **Key Result:**
     * **Baseline PPL:** ~8.5
-    * **Zeta-Attention:** **7.46** (Geometric Stability)
+    * **Zeta-Attention:** **7.45** (Geometric Stability)
     * **Zeta-Chaos Mode:** **6.58** (SOTA) — The model performed *better* when we injected random gradient noise, proving antifragility.
 
 ### 2. 🖼️ Vision: Chaos Resilience
@@ -30,7 +30,7 @@ Can a ResNet-18 survive in a hostile environment?
 * **Experiment:** Training on *CIFAR-10* with **0.5x Gradient Noise** injected at every step.
 * **Standard Optimizer:** Failed to converge (Accuracy < 15%).
 * **Zeta Optimizer:** Successfully teleported through the noise landscape.
-* **Key Result:** Achieved **32% Accuracy** under heavy noise conditions, with consistent teleportation activity (~3906 jumps/epoch).
+* **Key Result:** Achieved **34% Accuracy** under heavy noise conditions, with consistent teleportation activity (~3906 jumps/epoch).
 
 ### 3. 🤖 RL: Superhuman Stability
 **File:** [`Zeta-RL.ipynb`](./Zeta-RL.ipynb) (Phase 5.8)
