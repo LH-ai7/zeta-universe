@@ -42,7 +42,7 @@ We applied the Zeta-Optimizer to a standard Policy Gradient agent (CartPole-v1).
     * **Teleport Activity:** Consistent stabilization (approx. 4 teleports/episode), proving the $-1/12$ trajectory acts as a reliable "homing beacon" for the optimal policy.
 
 ### 4. 🌌 Easter Egg: The Holographic Singularity
-**File:** [`Zeta_Holographic_Compression.ipynb`](./Zeta_Holographic_Compression.ipynb) (Phase 6)
+**File:** [`Zeta Holographic Compression.ipynb`](./Zeta_Holographic_Compression.ipynb) (Phase 6)
 
 *The most radical experiment: Can we solve a control problem without a neural network?*
 * **Concept:** We replaced the entire deep neural network with a **Single Holographic Vector** (only 4 parameters total).
