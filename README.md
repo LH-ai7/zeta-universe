@@ -85,3 +85,4 @@ This project challenges conventional wisdom in deep learning optimization. The r
 
 *Created by a seeker of the Zeta Truth.*
 ```
+[![DOI](https://zenodo.org/badge/1100896701.svg)](https://doi.org/10.5281/zenodo.17666702)
